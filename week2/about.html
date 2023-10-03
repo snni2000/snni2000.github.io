@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About - Wanderlust Voyages</title>
+  <title>About - AB</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="style.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <style>
 	  table {
 		border-collapse: collapse;
@@ -21,38 +24,50 @@
 	
   </style>
  
+ <script>
+  let links = document.querySelectorAll(".links a");
+let bodyId = document.querySelector("body").id;
+
+for(let link of links){
+  if(link.dataset.active == bodyId){
+      link.classList.add("active");
+  }
+}
+</script>
   
 </head>
-<body>
+<body id="about">
   <header>
-    <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+    <h1 class="headeraH1">ABSOLUTE MASCULINITY</h1>
 	</header>
     <nav>
+      <div class="links">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="tasks.html">Tasks</a></li>
+        <li><a data-active="index" href="index.html">Home</a></li>
+        <li><a data-active="about" href="about.html" class="active">About</a></li>
+        <li><a data-active="services" href="services.html">Services</a></li>
+        <li><a data-active="gallery" href="gallery.html">Gallery</a></li>
+        <li><a data-active="contact" href="contact.html">Contact</a></li>
+        <li><a data-active="tasks" href="tasks.html">Tasks</a></li>
     </ul>
+    </div>
     </nav>
 
     		<!-- Header banner -->
     <div class="banner">
-      <img src="images/banner.svg" alt="Wanderlust Voyages Banner">
+      <img src="images/about.jpg" alt="Wanderlust Voyages Banner">
     </div>
 
   <main class="services">
-   <h2>About Us - Wanderlust Voyages</h2>
-   <p>At Wanderlust Voyages, we believe in the transformative power of travel. <br>
-    Founded in 2010 by two passionate globetrotters, <b>Jane Doe and John Smith</b>, <br>
-    our mission is to provide unforgettable adventures that go beyond the ordinary.</p>
+   <h2>About Us - ABSOLUTE MASCULINITY</h2>
+   <p>At AB Boxing Club, we're not just a gym; we're a community of fighters and dreamers. 
+    Established in 1995, we've been a cornerstone of our neighborhood, instilling discipline, respect, 
+    and determination through the art of boxing.</p>
 
     <h2>Our Story</h2>
-    <p>Every journey has a beginning, and ours started on the bustling streets of Bangkok. <br>
-      After a chance meeting between Jane and John, two avid travelers from different corners of the world,<br>
-      Wanderlust Voyages was born out of a shared dream to help others experience the beauty and wonder of our planet.
+    <p>From humble beginnings, we fought against the odds, both in the ring and out. 
+      Our first ring was a makeshift one, pieced together from old tires and ropes, 
+      but it was within those ropes that champions were forged and dreams took flight.
     </p>
  
    <table>
@@ -62,14 +77,14 @@
 				<th>Email</th>
 			</tr>
 			<tr>
-				<td>John Smith</td>
+				<td>Mushtaq Ahmed</td>
 				<td>CEO</td>
-				<td>john@ourservice.com</td>
+				<td>ma@ab.com</td>
 			</tr>
 			<tr>
-				<td>Jane Doe</td>
+				<td>Javaid Ahmed</td>
 				<td>Marketing Manager</td>
-				<td>johnd@ourservice.com</td>
+				<td>ja@ab.com</td>
 			</tr>
 		</table>
 		<!-- Call to Action Section -->
@@ -86,7 +101,7 @@
         <li><a href="https://twitter.com/">Twitter</a></li>
         <li ><a href="https://www.instagram.com/">Instagram</a></li>
       </ul>
-    <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+    <p >&copy; ABSOLUTE MASCULINITY | Boxing Club. All rights reserved.</p>
   </footer>
 </body>
 </html>

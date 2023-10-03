@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gallery - Wanderlust Voyages</title>
+  <title>Gallery - AB</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <style>
    .gallery-container {
 	margin: 0 auto;
@@ -20,35 +23,49 @@
   }
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    let links = document.querySelectorAll(".links a");
+let bodyId = document.querySelector("body").id;
+ 
+for(let link of links){
+    if(link.dataset.active == bodyId){
+        link.classList.add("active");
+    }
+}
+  </script>
+
 </head>
-<body>
+<body id="gallery">
  <div>
   <header>
-    <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+    <h1 class="headeraH1">ABSOLUTE MASCULINITY</h1>
 	</header>
     <nav>
+      <div class="links">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="tasks.html">Tasks</a></li>
+        <li><a data-active="index" href="index.html">Home</a></li>
+        <li><a data-active="about" href="about.html">About</a></li>
+        <li><a data-active="services" href="services.html">Services</a></li>
+        <li><a data-active="gallery" href="gallery.html" class="active">Gallery</a></li>
+        <li><a data-active="contact" href="contact.html">Contact</a></li>
+        <li><a data-active="tasks" href="tasks.html">Tasks</a></li>
     </ul>
+    </div>
     </nav>
   
   <main class="services">
       <h1>Gallery</h1>
 
 		<div class="gallery-container">
-			<img src="images/1.jpeg" alt="Spa Image 1">
-			<img src="images/2.jpeg" alt="Spa Image 2">
-			<img src="images/3.jpeg" alt="Spa Image 3">
-			<img src="images/4.jpeg" alt="Spa Image 4">
-			<img src="images/5.jpeg" alt="Spa Image 5">
-			<img src="images/6.jpeg" alt="Spa Image 6">
-			<img src="images/7.jpeg" alt="Spa Image 7">
-			<img src="images/8.jpeg" alt="Spa Image 7">
+			<img src="images/Gallery/1.jpg" alt="Spa Image 1">
+			<img src="images/Gallery/2.jpg" alt="Spa Image 2">
+			<img src="images/Gallery/3.jpg" alt="Spa Image 3">
+			<img src="images/Gallery/4.jpg" alt="Spa Image 4">
+			<img src="images/Gallery/5.jpg" alt="Spa Image 5">
+			<img src="images/Gallery/6.jpg" alt="Spa Image 6">
+			<img src="images/Gallery/7.jpg" alt="Spa Image 7">
+			<img src="images/Gallery/8.jpg" alt="Spa Image 7">
 		</div>
    <!-- Call to Action -->
    <section class="cta-container">
@@ -64,7 +81,7 @@
         <li><a href="https://twitter.com/">Twitter</a></li>
         <li ><a href="https://www.instagram.com/">Instagram</a></li>
       </ul>
-    <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+    <p >&copy; ABSOLUTE MASCULINITY | Boxing Club. All rights reserved.</p>
   </footer>
  </div>
 </body>
